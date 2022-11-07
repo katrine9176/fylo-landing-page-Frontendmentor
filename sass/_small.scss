@@ -1,0 +1,63 @@
+@media (max-width: 400px) {
+	.nav {
+		margin-bottom: 4em;
+
+		&__links {
+			&-logo {
+				margin-right: 0.5em;
+			}
+		}
+	}
+
+	.header {
+		&__img {
+			height: 200px;
+		}
+
+		&__heading {
+			font-size: 2.7rem;
+		}
+
+		&__form {
+			&-input,
+			&-btn {
+				width: 300px;
+			}
+		}
+	}
+
+	.main {
+		.section {
+			margin-top: -4em;
+
+			&__img {
+				height: 200px;
+			}
+
+			&__heading {
+				font-size: 3rem;
+			}
+
+			&__article {
+				width: 300px;
+			}
+		}
+	}
+
+	.aside {
+		&__form {
+			&-input,
+			&-btn {
+				width: 250px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.main {
+		.wave {
+			background-image: url('../images/bg-curve-mobile.svg');
+		}
+	}
+}

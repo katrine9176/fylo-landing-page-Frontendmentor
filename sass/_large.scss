@@ -1,0 +1,325 @@
+@media (min-width: 992px) {
+	.nav {
+		&__links {
+			&-logo {
+				margin-right: 30em;
+				margin-left: 2em;
+			}
+		}
+	}
+
+	.header {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+
+		&__img {
+			grid-column: 2/3;
+			grid-row: 1/4;
+			height: 400px;
+		}
+
+		&__heading,
+		&__paragraph,
+		&__form {
+			grid-column: 1/2;
+		}
+
+		&__heading {
+			margin-left: 50px;
+			grid-row: 1/2;
+			text-align: left;
+		}
+
+		&__paragraph {
+			margin-top: -5em;
+			margin-left: 50px;
+			text-align: left;
+			grid-row: 2/3;
+		}
+
+		&__form {
+			margin-top: -5em;
+			grid-row: 3/4;
+			align-items: center;
+
+			&-input,
+			&-btn {
+				width: 450px;
+			}
+
+			&-input {
+				margin-top: -10em;
+			}
+		}
+	}
+
+	.main {
+		.section {
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-auto-rows: 5;
+			}
+
+			&__img {
+				grid-column: 2/3;
+				grid-row: 1/6;
+				height: 370px;
+				margin-top: 2em;
+			}
+
+			&__heading,
+			&__paragraph,
+			&__link,
+			&__article {
+				grid-column: 1/2;
+			}
+
+			&__heading {
+				grid-row: 1/2;
+				text-align: left;
+				margin-left: 40px;
+			}
+
+			&__paragraph {
+				grid-row: 2/3;
+				color: $very-dark-blue;
+				margin-left: 40px;
+
+				&--second {
+					grid-row: 3/4;
+					margin-top: 0;
+				}
+			}
+
+			&__link {
+				grid-row: 4/5;
+				width: 170px;
+				margin-left: 40px;
+			}
+
+			&__article {
+				grid-row: 5/6;
+				width: 450px;
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.aside {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__heading,
+		&__paragraph {
+			grid-column: 1/2;
+			text-align: left;
+		}
+
+		&__form {
+			grid-column: 2/3;
+			margin-top: -2em;
+
+			&-input {
+				width: 400px;
+			}
+		}
+	}
+
+	.footer {
+		.container {
+			display: grid;
+			grid-auto-columns: 4;
+		}
+
+		&__logo,
+		&__info {
+			grid-column: 1/2;
+		}
+
+		&__box {
+			margin-bottom: 3em;
+			&--sec-column {
+				margin-top: -1em;
+				grid-column: 2/3;
+			}
+
+			&--thr-column {
+				margin-top: -1em;
+				grid-column: 3/4;
+			}
+		}
+
+		&__social,
+		&__attribution {
+			margin-top: -1em;
+			grid-column: 4/5;
+		}
+
+		&__social {
+			&-element {
+				height: 40px;
+			}
+		}
+
+		&__attribution {
+			margin-top: -6em;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		margin-top: 2em;
+
+		&__links {
+			&-logo {
+				margin-right: 40em;
+			}
+		}
+	}
+
+	.header {
+		padding-top: 3.5em;
+
+		&__img {
+			margin-left: 4em;
+		}
+
+		&__form {
+			flex-direction: row;
+
+			&-input,
+			&-btn {
+				margin-top: -200px;
+				width: 300px;
+			}
+
+			&-input {
+				margin-left: 3.7em;
+			}
+
+			&-btn {
+				margin-left: 1em;
+				margin-top: -228px;
+			}
+		}
+	}
+
+	.main {
+		.section {
+			&__heading,
+			&__paragraph,
+			&__link,
+			&__article {
+				margin-left: 60px;
+			}
+
+			&__heading {
+				font-size: 3.8rem;
+			}
+
+			&__img {
+				margin-left: 50px;
+			}
+
+			&__article {
+				.text {
+					margin-left: 1.5em;
+				}
+				&-box-info {
+					&-name,
+					&-job {
+						margin-left: -20px;
+					}
+				}
+			}
+		}
+	}
+
+	.aside {
+		&__heading,
+		&__paragraph {
+			margin-left: 50px;
+		}
+
+		&__form {
+			margin-top: -3em;
+
+			&-input {
+				width: 500px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		&__links {
+			&-logo {
+				margin-right: 55em;
+			}
+		}
+	}
+
+	.header {
+		margin-top: 5em;
+
+		&__heading {
+			margin-bottom: 1.5em;
+		}
+
+		&__img {
+			margin-top: -3.5em;
+			margin-left: 5em;
+		}
+
+		&__form {
+			margin-top: 3em;
+
+			&-input {
+				width: 370px;
+			}
+
+			&-btn {
+				width: 320px;
+			}
+		}
+	}
+
+	.main {
+		.section {
+			&__img {
+				margin-left: 100px;
+			}
+
+			&__heading,
+			&__paragraph,
+			&__link,
+			&__article {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.aside {
+		.container {
+			margin: 0 auto;
+		}
+
+		&__heading,
+		&__paragraph {
+			margin-left: 0;
+		}
+	}
+
+	.footer {
+		&__logo {
+			margin-bottom: 3.5em;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@mixin input() {
+	width: 350px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid $very-dark-blue;
+
+	&::placeholder {
+		font-size: 1.5rem;
+		color: $light-gray;
+	}
+}
+
+@mixin btn() {
+	width: 350px;
+	height: 50px;
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	background-color: $bright-blue;
+	border: none;
+	color: $light-grayish-blue;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: $bright-blue-light;
+		cursor: pointer;
+	}
+}
